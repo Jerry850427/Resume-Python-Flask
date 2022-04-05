@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <title>Research</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index3.css') }}">
+</head>
+<body>
+ <div class="navpos navbar navbar-dark bg-dark ">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a {% if request.endpoint == 'home' %} class="nav-link active text-white " {% else %} class="nav-link text-white"{% endif %}  href="home" style="font-size: 20px" >Home</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'experience'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="experience" style="font-size: 20px">Experience</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'education'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="education" style="font-size: 20px">Education</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'skills'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="skills" style="font-size: 20px">Skills</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'research'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="research" style="font-size: 20px">Research</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'publication'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="publication" style="font-size: 20px">Publication</a>
+    </li>
+   </ul>
+ </div>  
+  
+
+  <div class="timeline">
+    <ul>
+      <li>
+        <span>April 2020</span>
+        <div class="content">
+          <h3>2020 International Conference on Management Science and Industrial Engineering</h3>
+          <p>
+            Oral presentation of the effect of postures on estimating joint center locations using depth cameras.
+          </p>
+        </div>
+      </li>
+      <li>
+        <span>March 2019</span>
+        <div class="content">
+          <h3>2019 Ergonomics Society of Taiwan Annual Meeting and Conference</h3>
+          <p>
+            The first author of the research paper.</br>
+            Reported the paper of the effect of chair handle and height on office worker sit-to-stand movement.
+          </p>
+        </div>
+      </li>
+      <li>
+        <span>September 2018 ~ June 2020</span>
+        <div class="content">
+          <h3>Ministry of Science and Technology Project (MOST): Development of an advanced portable assessment system for ergonomic task evaluation</h3>
+          <p>
+            Study the calculation of inverse dynamic model.</br>
+            Used Matlab for data preprocessing and neural network model.</br>
+            Wrote codes for biomechanical models, data visualization and graphic user interface.</br>
+          </p>
+        </div>
+      </li>
+      <li>
+        <span>September 2018 ~ December 2018</span>
+        <div class="content">
+          <h3>Ministry of Science and Technology Project (MOST): Design of augmented reality display interfaces: the investigation between the legibility of Chinese characters on optical head-mounted display and the gait adjustment</h3>
+          <p>
+            Wrote the program of graphic user interface and index calculation with Python.
+          </p>
+        </div>
+      </li>
+      <li>
+        <span>July 2017 ~ December 2017</span>
+        <div class="content">
+          <h3>Undergraduate research: An article style judgment system based on document features indices</h3>
+          <p>
+            Build the database with SQLite.</br>
+            Wrote the program of graphic user interface with tkinter package.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

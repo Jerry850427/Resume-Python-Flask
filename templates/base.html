@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/template.css') }}">
+</head>
+<body class = "bg" background="./static/bg_img2.png">
+ <div class="navpos navbar navbar-dark bg-dark ">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a {% if request.endpoint == 'home' %} class="nav-link active text-white " {% else %} class="nav-link text-white"{% endif %}  href="home" style="font-size: 20px" >Home</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'experience'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="experience" style="font-size: 20px">Experience</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'education'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="education" style="font-size: 20px">Education</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'skills'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="skills" style="font-size: 20px">Skills</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'research'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="research" style="font-size: 20px">Research</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'publication'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="publication" style="font-size: 20px">Publication</a>
+    </li>
+   </ul>
+ </div>  
+ <title>{% block title %}{% endblock %}</title> 
+ 
+  <img src="./static/jerry.png"/ height="400" class="imgPlace" style="border:2px solid #000">
+  <h1 class = "w_pos" style="line-height: 30px">
+    Fab Production Control Engineer / Planner </br></br>
+    NAME&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;高漢佑&ensp;(Jerry)</br></br>
+    BIRTH&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1996-04-27</br></br>
+    PHONE&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;0975-138-863</br></br>
+    MAIL&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;jerry1996040427@gmail.com</br></br>
+  </h1>
+  
+    <br></br>
+    <br></br>
+    <br></br>
+
+</body> 
+</html>
+
+
+
+
+
+

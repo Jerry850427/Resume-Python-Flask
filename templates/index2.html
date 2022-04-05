@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/template.css') }}">
+</head>
+<body class = "bg" background="./static/office2.jpg">
+ <div class="navpos navbar navbar-dark bg-dark ">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a {% if request.endpoint == 'home' %} class="nav-link active text-white " {% else %} class="nav-link text-white"{% endif %}  href="home" style="font-size: 20px" >Home</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'experience'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="experience" style="font-size: 20px">Experience</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'education'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="education" style="font-size: 20px">Education</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'skills'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="skills" style="font-size: 20px">Skills</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'research'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="research" style="font-size: 20px">Research</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'publication'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="publication" style="font-size: 20px">Publication</a>
+    </li>
+   </ul>
+ </div>   
+ <title>Experience</title>    
+    
+  <img src="./static/tsmc.png"/ height="120" class="tsmc_img" > 
+  <h1 class = "w2_pos" style="line-height: 30px">
+    Fab Production Control Engineer / Planner (2021.9 ~ )</br>
+    Taiwan Semiconductor Manufacturing Co., Hsinchu.</br>
+    <hr style="background-color:black; height:1px">
+    ◆ Manage 4 bumping process production products.</br> 
+    ◆ Fab master production schedule and capacity utilization management.</br>
+    ◆ Write the program to monitor fab’s WIP status/daily move data by using VBA and SQL.</br>
+    ◆ Arrange 107 new product introduction schedule for 35 customers and key device tracing with no impact.</br>  
+   </br>
+  </h1>
+
+
+</body> 
+</html>
+

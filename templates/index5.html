@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>Skills</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index5.css') }}">
+</head>
+<body>
+ <div class="navpos navbar navbar-dark bg-dark ">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a {% if request.endpoint == 'home' %} class="nav-link active text-white " {% else %} class="nav-link text-white"{% endif %}  href="home" style="font-size: 20px" >Home</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'experience'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="experience" style="font-size: 20px">Experience</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'education'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="education" style="font-size: 20px">Education</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'skills'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="skills" style="font-size: 20px">Skills</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'research'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="research" style="font-size: 20px">Research</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'publication'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="publication" style="font-size: 20px">Publication</a>
+    </li>
+   </ul>
+ </div> 
+ 
+  <canvas class = "c1" id = "b1" width="1000" height="50" ></canvas>
+  <canvas class = "c3" id = "board" width="800" height="280" ></canvas>
+  <p id="text" class = "w_pos">◆ Industrial engineer (motion and time study, facility planning)</br>◆ Production planning</br>◆ Quality control</br>◆ Ergonomics</p>
+  <input class = "b1" type="button" value="Knowledge" onclick='document.getElementById("text").innerHTML = "◆ Industrial engineer (motion and time study, facility planning)</br>◆ Production planning</br>◆ Quality control</br>◆ Ergonomics"' style="width:150px;height:50px;"/>
+  <input class = "b2" type="button" value="Programming" onclick='document.getElementById("text").innerHTML = "◆ Python (data processing/ data visualization/ GUI design)</br>◆ Matlab (neural network)</br>◆ SQL (database index)</br>"' style="width:150px;height:50px;"/>
+  <input class = "b3" type="button" value="Software" onclick='document.getElementById("text").innerHTML = "◆ Statistics (Minitab, SPSS)</br>◆ Flexsim</br>◆ AutoCAD</br>"' style="width:150px;height:50px;"/>
+  <input class = "b4" type="button" value="Language" onclick='document.getElementById("text").innerHTML = "◆ Chinese (mother tongue)</br>◆ English (TOEIC:885)</br>"' style="width:150px;height:50px;"/>
+
+  <canvas class = "c2" id = "b2" width="1000" height="50" ></canvas>
+</body>
+</html>

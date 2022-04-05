@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>Skills</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index6.css') }}">
+</head>
+<body  class = "bg" background="./static/page.png">
+ <div class="navpos navbar navbar-dark bg-dark ">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a {% if request.endpoint == 'home' %} class="nav-link active text-white " {% else %} class="nav-link text-white"{% endif %}  href="home" style="font-size: 20px" >Home</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'experience'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="experience" style="font-size: 20px">Experience</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'education'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="education" style="font-size: 20px">Education</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'skills'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="skills" style="font-size: 20px">Skills</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'research'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="research" style="font-size: 20px">Research</a>
+    </li>
+    <li class="nav-item">
+      <a {% if request.endpoint == 'publication'%} class="nav-link active text-white " {% else %} class="nav-link text-white "{% endif %} href="publication" style="font-size: 20px">Publication</a>
+    </li>
+   </ul>
+ </div> 
+ 
+ <p1 class ="p1">Artificial neural network can improve the accuracy</br>of a markerless skeletal model in L5/S1 position</br>estimation during symmetric lifting</p1>
+ <p2 class ="p2">Journal of Biomechanics (130) 2022 </br> <hr size="20" style="background-color:black; height:0.25px">
+                 Part of research from graduate school had been accepted </br>by Journal of Biomechanics and published in Jan. 2022.</br></br>
+                 ◆ Wrote the paper as the role of third author.</br>
+                 ◆ Came up with the conceptual framework and collected </br>experiment data.</br>
+                 ◆ Wrote the program with Python and Matlab.</br> 
+                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button button1" onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S0021929021006035?casa_token=ejD2_uCcwTcAAAAA:PPxiKUcUQULfj5wGEU0ekUmQlRvR_emNXrjh4Hoix2qvoulxqsZxPz3VdAepGCy37H1B9rzfTW4');">Discover more</button> 
+ </p2>
+ 
+ <p3 class ="p3">The low back biomechanical analysis for symmetric</br>lifting task using artificial neural network-based</br>depth camera</p3>
+ <p4 class ="p4">National Tsing Hua Unversity Thesis 2020 </br> <hr size="20" style="background-color:black; height:0.25px">
+                 The main goal of the research is to develop an artificial neu-</br>ral network-based depth camera to improve the accuracy of</br>low back joint detection and assessment of low back load.</br></br>
+                 ◆ Build an artificial neural network model to improve the</br>error of low back joint position identified by a depth camera.</br>
+                 ◆ Assess the accuracy and improvement of low back load</br>by using ANN depth camera.
+</br>
+
+ </p4>
+</div>
+</body>
+</html>
